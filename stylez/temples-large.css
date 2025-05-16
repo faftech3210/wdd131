@@ -1,0 +1,36 @@
+@media (min-width: 1024px) {
+    body {
+        font-family: sans-serif;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    nav .menulinks {
+        display: flex; /* Show menu normally */
+        flex-direction: row;
+        position: static;
+    }
+
+    button#myButton {
+        display: none; /* Hide hamburger menu */
+    }
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 5px;
+    }
+  
+      @media (max-width: 1024px) {
+    .photos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
