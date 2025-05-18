@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAF Chamber of Commerce</title>
+    <meta name="author" content="Franklin Akor Faeren">
+    <meta name="discription" content="Dynamic Web Fundamentals Example-home page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/cfc.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/favicon (1).png" alt="FAF Chamber of Commerce">
+            <h1>FAF Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active-page">Home</a></li>
+                <li><a href="#">Events Calendar</a></li>
+                <li><a href="#">Business Directory</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAF Business Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="search-section">
+            <div class="background-image">
+                <img src="images/chamber-networking-feature.webp" height="200" alt="Board Members">
+            </div>
+            <div class="search-bar">
+                <h2>FAF Chamber Member Directory</h2>
+                <form>
+                    <label for="options"></label>
+                    <select id="options" name="options">
+                        <option>All</option>
+                    </select>
+                    <label for="text"></label>
+                    <input type="text" id="text" name="text" placeholder="Seach by Keyword">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="categories">
+            <h3>Popular Categories:</h3>
+            <ul>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Nonprofit Organizations</a></li>
+                <li><a href="#">Hotels & Motels</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="#">Accommodations</a></li>
+            </ul>
+        </section>
+        
+        <section class="advertisement">
+            <div class="ad-content">
+                <img src="images/ablcc-resources_useful-addresses4-min.jpg" width="500" height="100"  alt="Compassionate home care in San Diego">
+                <div class="ad-text">
+                    <h4>Compassionate home care in San Diego</h4>
+                    <p>Contact us: 760-908-8408</p>
+                    <a href="#">https://www.google.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 FAF Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/cfc.js"></script>
+</body>
+</html>
