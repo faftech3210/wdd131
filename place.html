@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Fundamentals - Franklin A. Faeren</title>
+    <meta name="author" content="Franklin Akor Faeren">
+    <meta name="discription" content="Dynamic Web Fundamentals Place page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Lagos State</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/Lekki_Link_bridge-large-hero.webp" media="min-width: 750px">
+            <img src="images/Lekki_Link_bridge-small-hero.webp" alt="Orem Utah Temple" width="400" height="200">
+        </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <p>Area: 3345 square kilometres</p>
+            <p>Population: 17,156,000.00</p>
+            <P>Capital: Ikeja</P>
+            <p>languages: Yoruba</p>
+            <p>Currency: NGN</p>
+            <p>Time Zone: WAT</p>
+            <p>CallingCode: +234</p>
+            <p>InternetTLD: </p>
+        </section>
+        <section id="weather">
+            <h2>
+                Weather
+                <img src="images/cloudy-weather-svgrepo-com.svg" class="weather-icon-h2" width="30" height="30" alt="Weather Icon">
+            </h2>
+            <img src="images/cloudy-weather-svgrepo-com.svg" class="weather-icon-box" width="50" height="50" alt="Weather Icon">
+            <p>Temperature: <span id="temperature">5</span>°C</p>
+            <p>Wind Speed: <span id="windSpeed">10</span> km/h</p>
+            <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/place.js"></script>
+</body>
+</html>
