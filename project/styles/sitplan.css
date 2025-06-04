@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #0073e6; /* Primary color */
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+/* Section Styling */
+section {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #0073e6;
+}
+
+/* List Styles */
+ul {
+    list-style: square;
+}
+
+/* Wireframe Image Styling */
+img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #0073e6; /* Primary color */
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
