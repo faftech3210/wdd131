@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Franklin Akor Faeren">
+    <meta name="discription" content="Dynamic Web Fundamentals Example-home page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <form method="get" action="review.html">
+        <!-- Product Name -->
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <!-- Overall Rating -->
+        <label>Overall Rating:</label>
+        <div class="rating">
+            <div>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+            </div>
+            <div>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+            </div>
+            <div>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&#9733;&#9733;&#9733;</label>
+            </div>
+            <div>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&#9733;&#9733;</label>
+            </div>
+            <div>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+        </div>
+
+        <!-- Date of Installation -->
+        <label for="install-date">Date of Installation:</label>
+        <input type="date" id="install-date" name="install-date" required>
+
+        <!-- Useful Features -->
+        <label>Which Feature did you find useful in the product(Check all that apply):</label>
+        <div class="features">
+            <input type="checkbox" id="feature1" name="features" value="Durability">
+            <label for="feature1">Durability</label>
+            <input type="checkbox" id="feature2" name="features" value="Efficiency">
+            <label for="feature2">Efficiency</label>
+            <input type="checkbox" id="feature3" name="features" value="Cost-effectiveness">
+            <label for="feature3">Cost-effectiveness</label>
+        </div>
+
+        <!-- Written Review -->
+        <label for="review">Write a Review:</label>
+        <textarea id="review" name="review"></textarea>
+
+        <!-- User Name -->
+        <label for="username">Your Name (Optional):</label>
+        <input type="text" id="username" name="username">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Product Review Platform By Franklin Akor| All Rights Reserved</p>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
