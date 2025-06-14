@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+}
+
+.logo {
+    font-weight:bolder;
+    font-size: 4rem;
+    margin-left: 30px;
+    background-color: #2f2020;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden on large screens */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-right: 30px;
+}
+
+/* Hero Section */
+.hero-banner img {
+    width: 100%;
+    height: 500px
+}
+
+/* CTA Buttons (Bottom Left) */
+.cta-buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    bottom: 20px;
+    left: 20px; /* Moves CTA to bottom left */
+}
+
+.cta {
+    padding: 20px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Services Section */
+.services {
+    padding: 30px;
+    text-align: center;
+}
+
+.service-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Service Cards with Images */
+.service {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Pricing Form */
+.pricing-form {
+    text-align: center;
+    padding: 30px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#shipment-type, #weight, #destination{
+    padding: 20px;
+}
+
+/* CTA Banner */
+.cta-banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.cta-banner .cta {
+    background-color: white;
+    color: #007bff;
+    padding: 15px 30px;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 30px;
+    text-align: center;
+}
+
+.faq-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-item img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #343a40;
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a, p {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #007bff; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge for an interactive feel */
+}
+
+
+.social-icons :hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        background-color: #007bff;
+        padding: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Adjust Features Section */
+    .service-categories {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .service img {
+        max-width: 200px;
+    }
+
+    /* Review Cards Wrap */
+    .review {
+        width: 100%;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+/* Landscape Mode Tweaks */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .hero-banner img {
+        height: 300px;
+    }
+
+    .cta-buttons {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .service-categories {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .faq-item img {
+        width: 30px;
+    }
+}

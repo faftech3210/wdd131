@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Efficient Logistics</title>
+    <meta name="author" content="Franklin Akor Faeren">
+    <meta name="discription" content="Dynamic Web Fundamentals Example-home page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/services.css">
+    <script defer src="scripts/services.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">////EL</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="tracking.html">Track Shipment</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-banner">
+            <img src="images/large-hero.webp" alt="Logistics Services">
+        </div>
+    </section>
+
+    <section class="services">
+        <h1>Our Services</h1>
+        <div class="service-categories">
+            <div class="service">
+                <img src="images/flight.webp" alt="Freight Transport">
+                <h2>Freight Transport</h2>
+                <p>Reliable transportation solutions to ensure fast and secure delivery.</p>
+            </div>
+            <div class="service">
+                <img src="images/warehouse.webp" alt="Warehousing">
+                <h2>Warehousing</h2>
+                <p>Safe and organized storage solutions for your goods.</p>
+            </div>
+            <div class="service">
+                <img src="images/lastmile.webp" alt="Last-Mile Delivery">
+                <h2>Last-Mile Delivery</h2>
+                <p>Fast doorstep delivery ensuring customer satisfaction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-form">
+        <h2>Request a Shipping Quote</h2>
+        <form action="#" method="POST">
+            <label for="shipment-type">Select Shipment Type:</label>
+            <select id="shipment-type">
+                <option>Freight Transport</option>
+                <option>Warehousing</option>
+                <option>Last-Mile Delivery</option>
+            </select>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight">
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" placeholder="Enter location">
+
+            <button type="submit" class="cta">Get a Quote</button>
+        </form>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <img src="images/tracking.webp" alt="FAQ Icon">
+            <h3>How long does delivery take?</h3>
+            <p>Delivery times vary based on location and shipment type, typically ranging from 1–5 business days.</p>
+        </div>
+        <div class="faq-item">
+            <img src="images/payment.webp" alt="Payment Icon">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept credit cards, PayPal,cash and direct bank transfers.</p>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <h2>Start Your Shipment Today!</h2>
+        <button class="cta">Book Now</button>
+    </section>
+
+    <footer>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Terms of Service</a>
+            <p>&copy;2025 🌸 Franklin Akor Faeren 🌸 Nigeria</p>
+            <p id="lastModified"></p> 
+        <div class="social-icons">
+            <img src="images/facebook.svg" alt="Facebook">
+            <img src="images/twitter.svg" alt="linkedin">
+            <img src="images/instagram.svg" alt="Instagram">
+            <img src="images/linkedin.svg" alt="linkedin">
+        </div>
+    </footer>
+
+</body>
+</html>

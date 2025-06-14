@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Shipment - Efficient Logistics</title>
+    <link rel="stylesheet" href="styles/tracking.css">
+    <script defer src="scripts/tracking.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">////EL</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="tracking.html">Track Shipment</a>
+        </nav>
+    </header>
+
+    <section class="tracking">
+        <h1>Track Your Shipment</h1>
+        <p>Enter your Shipment ID to view live updates.</p>
+        <form id="tracking-form">
+            <input type="text" id="shipment-id" placeholder="Enter Shipment ID" required>
+            <button type="submit" class="cta">Track</button>
+        </form>
+        <div id="tracking-results"></div>
+    </section>
+
+    <section class="progress">
+        <h2>Shipment Progress</h2>
+        <ul id="progress-updates">
+            <li>🔄 Processing...</li>
+        </ul>
+    </section>
+
+    <section class="notifications">
+        <h2>Get Shipment Alerts</h2>
+        <p>Receive updates via email or SMS.</p>
+        <form id="notifications-form">
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="tel" id="phone" placeholder="Enter phone number">
+            <button type="submit" class="cta">Subscribe to Alerts</button>
+        </form>
+    </section>
+
+    <section class="support">
+        <h2>Customer Support</h2>
+        <p>Need help? Contact us anytime.</p>
+        <p>Email: <strong>support@efficientlogistics.com</strong></p>
+        <p>Phone: <strong>+234-700-LOGISTICS</strong></p>
+    </section>
+
+    <footer>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Terms of Service</a>
+            <p id="p1">&copy;2025 🌸 Franklin Akor Faeren 🌸 Nigeria</p>
+            <p id="lastModified"></p>
+        <div class="social-icons">
+            <img src="images/facebook.svg" alt="Facebook">
+            <img src="images/twitter.svg" alt="Twitter">
+            <img src="images/instagram.svg" alt="Instagram">
+            <img src="images/linkedin.svg" alt="linkedin">
+        </div>
+    </footer>
+
+</body>
+</html>

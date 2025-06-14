@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+}
+
+.logo {
+    font-weight:bolder;
+    font-size: 4rem;
+    margin-left: 30px;
+    background-color: #2f2020;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden on large screens */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-right: 30px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('../images/large-hero.webp'); /* Set background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CTA Buttons (Bottom Left) */
+.cta-buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    bottom: 20px;
+    left: 20px; /* Moves CTA to bottom left */
+}
+
+.cta {
+    padding: 20px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.cta:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+/* Features Section (Responsive Grid) */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto adjust based on screen width */
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Ensures images resize & wrap */
+.features img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Reviews Section */
+.reviews {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Individual Review Cards */
+.review {
+    display: flex;
+    flex-direction: column; /* Stack reviews vertically */
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Improvements */
+.review p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.review strong {
+    color: #007bff;
+}
+
+.review em {
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #343a40;
+}
+
+footer a, #p1, #lastModified {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #007bff; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge for an interactive feel */
+}
+
+
+.social-icons :hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+        background-color: #007bff;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* Adjust Features Section */
+    .features {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        gap: 10px;
+    }
+
+    /* Review Cards Wrap */
+    .review {
+        width: 100%;
+    }
+}
+
+/* Landscape Mode Tweaks */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .hero {
+        height: 300px; /* Reduce hero section height */
+    }
+
+    .cta-buttons {
+        bottom: 10px; /* Adjust CTA placement */
+        left: 10px;
+    }
+
+    .features {
+        grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    }
+
+    .review {
+        padding: 15px;
+    }
+}
